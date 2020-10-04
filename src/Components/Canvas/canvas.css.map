@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AEAA,OAAO,CAAC,sEAAI;AACZ,OAAO,CAAC,+EAAI;AADZ,OAAO,CAAC,sEAAI;AACZ,OAAO,CAAC,+EAAI;AFEZ,AAAA,OAAO,CAAC;EACP,SAAS,EAAE,MAAM;ECgCjB,OAAO,EAAE,IAAI;EACb,cAAc,ED/BA,MAAM;ECgCpB,eAAe,EDhCO,UAAU;ECiChC,WAAW,EDjCuB,UAAU;EAC5C,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,UAAU;EACzB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,kBAAkB;EAC9C,aAAa,EEWE,GAAG;EFVlB,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,IAAI;CAChB",
+    "sources": [
+        "canvas.scss",
+        "../../styles/_mixin.scss",
+        "../../styles/_variables.scss",
+        "../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "canvas.css"
+}

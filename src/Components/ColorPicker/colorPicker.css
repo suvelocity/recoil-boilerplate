@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url(//db.onlinewebfonts.com/c/4aa3e37e571255737e5e6d4e9d9770a5?family=Rockwell);
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url(//db.onlinewebfonts.com/c/4aa3e37e571255737e5e6d4e9d9770a5?family=Rockwell);
+.colorPicker {
+  grid-area: colorPicker;
+  -webkit-box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  background: #4c6e94;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.colorPicker label {
+  font-family: Arial;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.colorPicker label #colorPickerInput {
+  background-color: #fff;
+}
+/*# sourceMappingURL=colorPicker.css.map */

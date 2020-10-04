@@ -1,0 +1,32 @@
+@import "../styles/mixin";
+@import "../styles/variables";
+
+.app {
+	background: $background-color;
+	padding: 2vh;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 15vh 60px 1fr;
+	grid-template-areas:
+		"header header"
+		"colorPicker canvas"
+		"sidebar canvas";
+	gap: 24px;
+	height: 96vh;
+	max-height: 96vh;
+	overflow: none;
+
+	&__header {
+		grid-area: header;
+		padding-top: 10px;
+		@include flex(column, center, center);
+
+		h1 {
+			font-family: Arial;
+			font-size: 4em;
+			margin: 0;
+			color: $header-color;
+			text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+		}
+	}
+}

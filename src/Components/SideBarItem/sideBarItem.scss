@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+.sidebar__row {
+	@include flex(row, space-evenly, center);
+	height: 70px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+	span {
+		@include sidebar-label;
+		font-size: 1.75rem;
+	}
+	label{
+		@include sidebar-label;
+	}
+	input {
+		width: 40px;
+	}
+}

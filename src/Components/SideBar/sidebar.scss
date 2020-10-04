@@ -1,0 +1,12 @@
+@import "../../styles/mixin";
+@import "../../styles/variables";
+
+.sidebar {
+	@include flex(column, flex-start, stretch);
+	grid-area: sidebar;
+	background-color: $menu-background-color;
+	box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0.7);
+	border-radius: $corner-radius;
+	max-height: 100%;
+	overflow: auto;
+}

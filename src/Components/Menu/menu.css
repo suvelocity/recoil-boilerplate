@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url(//db.onlinewebfonts.com/c/4aa3e37e571255737e5e6d4e9d9770a5?family=Rockwell);
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url(//db.onlinewebfonts.com/c/4aa3e37e571255737e5e6d4e9d9770a5?family=Rockwell);
+.sidebar__menu {
+  padding: 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 2fr;
+  -ms-grid-rows: (25px)[3];
+      grid-template-rows: repeat(3, 25px);
+      grid-template-areas: "widthLabel widthInput add" "heightLabel heightInput add" "colorLabel colorInput reset";
+  gap: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar__menu label {
+  font-family: Arial;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar__menu label[for="widthInput"] {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: widthLabel;
+}
+
+.sidebar__menu label[for="heightInput"] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: heightLabel;
+}
+
+.sidebar__menu label[for="colorPicker"] {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: colorLabel;
+}
+
+.sidebar__menu input {
+  color: #000;
+  width: 40px;
+  margin: 0 4px;
+  border: none;
+  outline: none;
+}
+
+.sidebar__menu input #widthInput {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: widthInput;
+}
+
+.sidebar__menu input #heightInput {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: heightInput;
+}
+
+.sidebar__menu input #colorInput {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: colorInput;
+}
+
+.sidebar__menu button {
+  border: none;
+  background: none;
+  outline: none;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: add;
+  color: #ffffff;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.sidebar__menu button:active {
+  outline: none;
+}
+
+.sidebar__menu button:hover {
+  cursor: pointer;
+}
+
+.sidebar__menu button:hover {
+  background-color: #ffffff;
+  color: #4c6e94;
+}
+
+.sidebar__menu #reset {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: reset;
+  padding: 5px;
+}
+/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+.rect {
+	// position: absolute;
+	@include flex(column, center, center);
+	margin: 5px;
+	border-radius: $corner-radius;
+
+	span {
+		@include sidebar-label;
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 14px;
+	}
+}

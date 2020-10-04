@@ -1,0 +1,19 @@
+@import "../../styles/mixin";
+@import "../../styles/variables";
+
+.colorPicker {
+	grid-area: colorPicker;
+	// margin-left: 1rem;
+	// height: 80%;
+	box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0.7);
+	border-radius: $corner-radius;
+	background: $menu-background-color;
+	@include flex(column, center, center);
+	label {
+		@include sidebar-label;
+
+		#colorPickerInput {
+			background-color: #fff;
+		}
+	}
+}

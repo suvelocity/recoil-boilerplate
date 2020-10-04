@@ -1,0 +1,41 @@
+@import "./variables";
+
+// text
+@mixin sidebar-label {
+	font-family: Arial;
+	color: $text-color;
+	margin: 0;
+	padding: 0;
+}
+@mixin description-text {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 117.17%;
+	color: $text-color-faded;
+}
+@mixin subtitle-text {
+	font-family: $font-details;
+	letter-spacing: 2px;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: $text-color;
+}
+@mixin box-shadow {
+	box-shadow: 10px 29px 1px rgba(0, 0, 0, 0.25);
+}
+@mixin item-text {
+	font-family: $font-song;
+	font-size: 1rem;
+	font-weight: 100;
+	color: $text-color;
+	text-align: center;
+}
+
+@mixin flex($direction, $justify, $align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}

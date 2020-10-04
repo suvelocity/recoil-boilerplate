@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url(//db.onlinewebfonts.com/c/4aa3e37e571255737e5e6d4e9d9770a5?family=Rockwell);
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url(//db.onlinewebfonts.com/c/4aa3e37e571255737e5e6d4e9d9770a5?family=Rockwell);
+.app {
+  background: #d6e6f2;
+  padding: 2vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 15vh 60px 1fr;
+      grid-template-rows: 15vh 60px 1fr;
+      grid-template-areas: "header header" "colorPicker canvas" "sidebar canvas";
+  gap: 24px;
+  height: 96vh;
+  max-height: 96vh;
+  overflow: none;
+}
+
+.app__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__header h1 {
+  font-family: Arial;
+  font-size: 4em;
+  margin: 0;
+  color: #4c6e94;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=app.css.map */

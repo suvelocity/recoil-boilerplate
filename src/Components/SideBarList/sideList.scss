@@ -1,0 +1,22 @@
+@import "../../styles/mixin";
+@import "../../styles/variables";
+
+.sidebar__list {
+	background-color: $list-background-color;
+	margin-top: 5px;
+	border-top: 1px solid rgba(255, 255, 255, 0.7);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+	overflow: auto;
+	padding: 0;
+	list-style: none;
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+	&::-webkit-scrollbar-track {
+		background: #4c6e94;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #f7fbfc;
+		border-radius: 4px;
+	}
+}

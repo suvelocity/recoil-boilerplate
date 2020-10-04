@@ -1,0 +1,38 @@
+
+@import '../../styles/mixin';
+@import '../../styles/variables';
+.displayRenders{
+  // background: rgba(255, 235, 205, 0.4);
+  @include flex(column,center,center);
+  color: $header-color;
+  font-family: Arial;
+  top:2vh;
+  left:2vh;
+  position: fixed;
+  border: 2px solid $header-color;
+  padding:8px;
+  h5{
+    margin:10px auto;
+
+
+  }
+  &__table{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size:12px;
+  }
+}
+  // &__list{
+  //   list-style: none;
+  //   @include subtitle-text;
+  //   font-size: 1.2rem;
+  //   color:black;
+  //   li{
+  //     width:500px;
+  //     @include flex(row,space-between,center);
+  //     span{
+  //       margin-right:20px;
+  //     }
+  //   }
+  // }
