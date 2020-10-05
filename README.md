@@ -119,9 +119,9 @@ Change the edit handling function in SideBarItem so it sets rectAtom in the same
 
 ## Tests:
 
-- Task 1,2 _npm run first_
-- Task 3 _npm run addRect_
-- Task 4,5 _npm run changeRect_
+- Task 1,2 _npm run test1_
+- Task 3 _npm run test2_
+- Task 4,5 _npm run test3_
 
 ## Bonus: try taking a look at the render meter mechanism and implement it yourself!
 
