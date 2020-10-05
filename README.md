@@ -76,7 +76,9 @@ In SideBarItem render: each item should have the following props so we can updat
 2. Width: //input type=text
 3. Height //input type=text
 4. Color: //input type=color
-   After we change the render method, we need to handle the `onChange` event when we update when of the props.
+
+Make sure to initiate each input value to its item property.   
+After we change the render method, we need to handle the `onChange` event when we update one of the props.
 
 ### After task 1: App re-rendered every time we changed Canvas's background.
 
