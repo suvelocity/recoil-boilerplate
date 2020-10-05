@@ -1,3 +1,8 @@
+const puppeteer = require("puppeteer");
+
+let page;
+let browser;
+jest.setTimeout(30000);
 describe("Edit rectangle", () => {
 	beforeEach(async () => {
 		//open a chromium browser
