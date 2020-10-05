@@ -59,11 +59,11 @@ describe("Can add background color functionality", () => {
 		// change color input color to a random color
 		await page.waitForSelector("#colorPickerInput");
 		await page.click("#colorPickerInput");
-		const arrowDown = Math.floor(Math.random() * 50) + 1;
+		const arrowDown = Math.floor(Math.random() * 50) + 5;
 		for (let i = 0; i < arrowDown; i++) {
 			await page.keyboard.press("ArrowDown");
 		}
-		const arrowRight = Math.floor(Math.random() * 50) + 1;
+		const arrowRight = Math.floor(Math.random() * 50) + 5;
 		for (let i = 0; i < arrowRight; i++) {
 			await page.keyboard.press("ArrowRight");
 		}
