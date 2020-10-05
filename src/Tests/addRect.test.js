@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
 
-
 let page;
 let browser;
 jest.setTimeout(30000);
