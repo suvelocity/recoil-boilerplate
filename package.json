@@ -15,11 +15,11 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"test": "react-scripts test",
+		"test": "react-scripts test --forceExit",
 		"eject": "react-scripts eject",
-		"test1": "jest colorPicker.test.js",
-		"test2": "jest addRect.test.js",
-		"test3": "jest changeRect.test.js"
+		"test1": "jest colorPicker.test.js --forceExit",
+		"test2": "jest addRect.test.js --forceExit",
+		"test3": "jest changeRect.test.js --forceExit"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
