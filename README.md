@@ -70,7 +70,7 @@ Include a counter called idCounter that saves the current number of rectangles, 
 
 ## Tasks 4: Add an edit option to SideBarItem!
 
-In SideBarList render: each item should have the following props so we can update them:
+In SideBarItem render: each item should have the following props so we can update them:
 
 1. Name: //string read only
 2. Width: //input type=text
