@@ -21,8 +21,7 @@ describe("Can Add a shape from Menu", () => {
 		// click on the width input and press arrow down to change the menu width value to 74px
 		await page.waitForSelector("#root #widthInput");
 		await page.click("#root #widthInput");
-		await page.keyboard.press("ArrowUp");
-		await page.keyboard.press("ArrowUp");
+		await page.keyboard.press("ArrowDown");
 		//click the add Shape button
 		await page.waitForSelector(
 			"#root > .app > .sidebar > .sidebar__menu > button:nth-child(7)"
