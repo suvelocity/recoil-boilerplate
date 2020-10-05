@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { useRecoilState, useResetRecoilState } from "recoil";
-import { rectsIdsArrState } from "../../Atoms/rectsIdsArrState.js";
-import { rectAtomFamily } from "../../Atoms/rectAtom.js";
 import "./menu.css";
 
 function Menu() {
@@ -9,29 +6,8 @@ function Menu() {
 	const [widthInput, setWidthInput] = useState(75);
 	const [heightInput, setHeightInput] = useState(75);
 	const [colorInput, setColorInput] = useState("#769fcd");
-	// Counter to Generate unique rect Id's
-	const [idCounter, setIdCounter] = useState(1);
-	const [rectAtom, setRectAtom] = useRecoilState(rectAtomFamily(idCounter));
-	const [shapesIdsArr, setShapesIdsArr] = useRecoilState(rectsIdsArrState);
-	const resetList = useResetRecoilState(rectsIdsArrState);
 
-	const submitShape = () => {
-		setShapesIdsArr([...shapesIdsArr, idCounter]);
-		setRectAtom({
-			...rectAtom,
-			width: parseInt(widthInput),
-			height: parseInt(heightInput),
-			color: colorInput
-		});
-		setWidthInput(75);
-		setHeightInput(75);
-		setIdCounter(idCounter + 1);
-	};
-	const deleteAllRectangles = () => {
-		resetList();
-		setIdCounter(1);
-	};
-
+	const submitShape = () => {};
 	return (
 		<div className="sidebar__menu">
 			<label htmlFor="widthInput">Width:</label>
@@ -59,9 +35,8 @@ function Menu() {
 				value={colorInput}
 				onChange={({ target }) => setColorInput(target.value)}
 			/>
-			<button onClick={submitShape}>Add Shape</button>
-			<button onClick={deleteAllRectangles} id="reset">
-				Reset List
+			<button onClick={submitShape} id="add-shape">
+				Add Shape
 			</button>
 		</div>
 	);

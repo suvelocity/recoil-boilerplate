@@ -6,7 +6,7 @@ function DisplayRenders() {
   const { appRenders, canvasRenders , sideBarRenders , SideBarListRenders} = useRecoilValue(renderMeterStats)
   return (
       <div className="displayRenders">
-        <h5>Forbidden Renders</h5>
+        <h5>Renders</h5>
         <div className="displayRenders__table">
           <span>App:{" "}</span>
           <span id="app-render">{appRenders}</span>

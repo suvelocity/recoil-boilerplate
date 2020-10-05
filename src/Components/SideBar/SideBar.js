@@ -1,11 +1,14 @@
 import React from "react";
-import {useRenderMeter} from "../../ChallengeUtils/hooks.js";
-import {sidebarRenderMeterState} from "../../ChallengeUtils/renderMeter.js";
 import Menu from "../Menu/Menu.js";
 import SideBarList from "../SideBarList/SideBarList.js";
 import "./sidebar.css";
+// DO NOT TOUCH THIS
+import { sidebarRenderMeterState } from "../../ChallengeUtils/renderMeter.js";
+import { useRenderMeter } from "../../ChallengeUtils/hooks.js";
+// ------------------------
+
 function SideBar() {
-	//DO NOT TOUCH THAT
+	//TOUCH THAT IF YOU WOKE UP BRAVE TODAY
 	useRenderMeter(sidebarRenderMeterState);
 	// ---------------------------------------------
 	return (

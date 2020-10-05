@@ -10,7 +10,7 @@
 	grid-template-areas:
 		"widthLabel widthInput add"
 		"heightLabel heightInput add"
-		"colorLabel colorInput reset";
+		"colorLabel colorInput add";
 	gap: 4px;
 	align-items: center;
 
@@ -62,9 +62,5 @@
 			background-color: $text-color;
 			color: $menu-background-color;
 		}
-	}
-	#reset {
-		grid-area: reset;
-		padding: 5px;
 	}
 }

@@ -2,19 +2,19 @@ import { atom ,selector }  from 'recoil';
 
 export const appRenderMeterState = atom ({
   key:'appRenderMeterState',
-  default : -1
+  default : 0
 })
 export const sidebarRenderMeterState = atom ({
   key:'sideBarRenderMeterState',
-  default : -1
+  default : 0
 })
 export const canvasRenderMeterState = atom ({
   key:'canvasRenderMeterState',
-  default : -2
+  default : 0
 })
 export const sideBarListRenderMeterState = atom ({
   key: 'sideBarListRenderMeterState',
-  default: -2
+  default: 0
 })
 
 export const renderMeterStats = selector({
