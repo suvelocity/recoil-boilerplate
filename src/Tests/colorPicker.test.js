@@ -2,7 +2,7 @@ const puppeteer = require("puppeteer");
 
 let page;
 let browser;
-jest.setTimeout(30000);
+jest.setTimeout(10000);
 describe("Can add background color functionality", () => {
 	beforeAll(async () => {
 		//open a chromium browser
@@ -26,13 +26,17 @@ describe("Can add background color functionality", () => {
 		// change color input color to a random color
 		await page.waitForSelector("#colorPickerInput");
 		await page.click("#colorPickerInput");
-		const arrowDown = Math.floor(Math.random() * 50) + 1;
+		const arrowDown = Math.floor(Math.random() * 50) + 5;
 		for (let i = 0; i < arrowDown; i++) {
 			await page.keyboard.press("ArrowDown");
 		}
-		const arrowRight = Math.floor(Math.random() * 50) + 1;
+		const arrowRight = Math.floor(Math.random() * 50) + 5;
 		for (let i = 0; i < arrowRight; i++) {
 			await page.keyboard.press("ArrowRight");
+		}
+		const arrowUp = Math.floor(Math.random() * 15) + 5;
+		for (let i = 0; i < arrowUp; i++) {
+			await page.keyboard.press("ArrowUp");
 		}
 		const color = await page.$eval("#colorPickerInput", e => e.value);
 
@@ -62,6 +66,10 @@ describe("Can add background color functionality", () => {
 		const arrowRight = Math.floor(Math.random() * 50) + 1;
 		for (let i = 0; i < arrowRight; i++) {
 			await page.keyboard.press("ArrowRight");
+		}
+		const arrowUp = Math.floor(Math.random() * 15) + 5;
+		for (let i = 0; i < arrowUp; i++) {
+			await page.keyboard.press("ArrowUp");
 		}
 		const color = await page.$eval("#colorPickerInput", e => e.value);
 
